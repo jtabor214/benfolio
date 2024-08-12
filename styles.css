@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'custom';
+  src: url('./assets/MGS2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#banner {
+  /* border: 2px solid red; */
+  border-bottom: 20px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px 0px 20px;/* Optional: Add some padding around the banner */
+  background-color: rgb(241, 227, 84); /* Optional: Background color for the banner */
+  font-family: custom;
+}
+  
+#banner h1 {
+  /* border: 1px solid blue; */
+  font-size: 100px;
+  color: white;
+  
+}
+
+#banner header {
+  flex: 1; /* Header takes up remaining space after nav */
+}
+
+#quick-links {
+  /* border: 1px solid red; Keeps your existing red border */
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allows the nav to take up equal space as header */
+  justify-content: space-around; /* Distributes the links evenly across the space */
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#quick-links li {
+  margin: 0; /* Remove any default margin */
+}
+
+#quick-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+}
