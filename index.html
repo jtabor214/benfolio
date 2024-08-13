@@ -9,30 +9,39 @@
 </head>
 <body>
   <div id="banner">
-    <header>
+    <header id="home-header">
         <h1>BEN <br> WEBSTER</h1>
     </header>
     <nav>
-        <ul id="quick-links">
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#portfolio">MY WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
+      <ul id="quick-links">
+          <li><a href="#about" class="nav-link" data-section="about">ABOUT ME</a></li>
+          <li class="dropdown">
+              <a href="#portfolio" class="dropbtn">MY WORK</a>
+              <ul class="dropdown-content">
+                  <li><a href="#screenwriting" class="nav-link" data-section="screenwriting">Screenwriting</a></li>
+                  <li><a href="#online-media" class="nav-link" data-section="online-media">Online Media</a></li>
+              </ul>
+          </li>
+          <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+      </ul>
+  </nav>
   </div>
-    <section id="about">
+  <script src="./index.js"></script>
+    <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>Write something about yourself here.</p>
+        <p>Little bio for the viewers.</p>
     </section>
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <h3>Screenwriting</h3>
-        <h3>Online Media</h3>
-        <p>Showcase your projects here.</p>
+    <section id="screenwriting" class="content-section">
+        <h2>Screenwriting</h2>
+        <p>Projects listed here.</p>
     </section>
-    <section id="contact">
+    <section id="online-media" class="content-section">
+        <h2>Online Media</h2>
+        <p>Projects listed here.</p>
+    </section>
+    <section id="contact" class="content-section">
         <h2>Contact</h2>
-        <p>Provide your contact information here.</p>
+        <p>hit me up.</p>
     </section>
     <footer>
         <p>&copy; 2024 Your Name</p>
