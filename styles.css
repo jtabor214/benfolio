@@ -82,23 +82,6 @@
   transform: translateX(-50%); /* Corrects positioning to align perfectly */
 }
 
-
-#quick-links > li > a {
-
-}
-
-.dropdown {
-
-}
-
-.dropdown-content {
-
-}
-
-.dropdown-content li {
-
-}
-
 .dropdown-content li a {
   border: 1px solid blue;
   display: flex;
