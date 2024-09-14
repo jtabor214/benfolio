@@ -8,43 +8,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <div id="banner">
     <header id="home-header">
-        <h1>BEN <br> WEBSTER</h1>
+        <h1>BEN WEBSTER</h1>
     </header>
+
+    <div id="personal-links">
+      <a href="#about" class="nav-link" data-section="about">ABOUT ME</a>
+      <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+    </div>
+
+  </div>
+
+  <div class="nav-container">
     <nav>
       <ul id="quick-links">
-          <li><a href="#about" class="nav-link" data-section="about">ABOUT ME</a></li>
-          <li class="dropdown">
-              <a href="#portfolio" class="dropbtn">MY WORK</a>
-              <ul class="dropdown-content">
-                  <li><a href="#screenwriting" class="nav-link" data-section="screenwriting">Screenwriting</a></li>
-                  <li><a href="#online-media" class="nav-link" data-section="online-media">Online Media</a></li>
-              </ul>
-          </li>
-          <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+        <li><a href="#screenwriting" class="nav-link" data-section="screenwriting">Screenwriting</a></li>
+        <li class="separator"></li> 
+        <li><a href="#online-media" class="nav-link" data-section="online-media">Online Media Production</a></li>
       </ul>
-  </nav>
+    </nav>
   </div>
+
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>Little bio for the viewers.</p>
+  </section>
+  <section id="screenwriting" class="content-section">
+    <h2>Screenwriting</h2>
+    <p>Projects listed here.</p>
+  </section>
+  <section id="online-media" class="content-section">
+    <h2>Online Media</h2>
+    <p>Projects listed here.</p>
+  </section>
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>hit me up.</p>
+  </section>
+  <footer>
+    <p>&copy; benmakesmedia</p>
+  </footer>
+
   <script src="./index.js"></script>
-    <section id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>Little bio for the viewers.</p>
-    </section>
-    <section id="screenwriting" class="content-section">
-        <h2>Screenwriting</h2>
-        <p>Projects listed here.</p>
-    </section>
-    <section id="online-media" class="content-section">
-        <h2>Online Media</h2>
-        <p>Projects listed here.</p>
-    </section>
-    <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <p>hit me up.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
 </body>
 </html>

@@ -6,65 +6,97 @@
 }
 
 #banner {
+  /* border: 2px solid blue; */
   border-bottom: 20px solid black;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px 50px 0px 50px;
   background-color: rgb(241, 227, 84);
+  color: white;
   font-family: custom;
 }
   
-#banner h1 {
+#home-header {
   font-size: 100px;
-  color: white;
-}
-
-#banner header {
+  cursor: pointer;
+  /* border: 1px solid red; */
   flex: 1;
 }
 
-#home-header {
-  cursor: pointer;
+#personal-links {
+  /* border: 2px solid green; */
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 190px;
+}
+
+#personal-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 #quick-links {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 0;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 300px; 
+  list-style: none;
   padding: 0;
-}
-
-#quick-links > li {
+  margin: 0;
+  /* max-width: 600px; */
+  width: 100%;
   position: relative;
 }
 
-#quick-links > li > a {
+#quick-link li {
+  text-align: center;
+  position: relative;
+}
+
+#quick-links li a {
   text-decoration: none;
-  color: white;
-  font-size: 60px;
+  color: black;
+  display: block;
+  font-size: 50px;
+  font-family: custom;
+}
+
+.separator {
+  background-color: black; /* Color of the separator line */
+  width: 10px; /* Width of the line */
+  height: 400px; /* Set a larger height */
+  display: block;
+  position: absolute; /* Position the line absolutely within the grid */
+  top: -300%; /* Adjust to center vertically */
+  left: 50%; /* Center horizontally in its grid cell */
+  transform: translateX(-50%); /* Corrects positioning to align perfectly */
+}
+
+
+#quick-links > li > a {
+
 }
 
 .dropdown {
-  position: absolute;
-  display: inline-block;
+
 }
 
 .dropdown-content {
-  display: none; /* Hidden by default */
-  position: relative;
-  margin-top: 10px;
-  background-color: rgb(241, 227, 84);
-  min-width: 160px;
-  /* left: -10%; */
-  z-index: 1;
+
 }
 
 .dropdown-content li {
-  margin: 0;
+
 }
 
 .dropdown-content li a {
