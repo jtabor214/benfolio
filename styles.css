@@ -6,31 +6,32 @@
 }
 
 #banner {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   border-bottom: 20px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 50px 0px 50px;
+  padding: 80px 50px 80px 50px;
   background-color: rgb(241, 227, 84);
   color: white;
   font-family: custom;
 }
   
 #home-header {
-  font-size: 100px;
-  cursor: pointer;
   /* border: 1px solid red; */
+  font-size: 180px;
+  cursor: pointer;
   flex: 1;
 }
 
 #personal-links {
   /* border: 2px solid green; */
-  font-size: 40px;
+  font-size: 70px;
   display: flex;
   flex-direction: row;
   gap: 190px;
+  padding-top: 50px;
 }
 
 #personal-links a {
@@ -76,17 +77,17 @@
   text-decoration: none;
   color: black;
   display: block;
-  font-size: 50px;
+  font-size: 130px;
   font-family: custom;
 }
 
 .separator {
   background-color: black; /* Color of the separator line */
-  width: 10px; /* Width of the line */
-  height: 500px; /* Set a larger height */
+  width: 25px; /* Width of the line */
+  height: 700px; /* Set a larger height */
   display: block;
   position: absolute; /* Position the line absolutely within the grid */
-  top: -200%; /* Adjust to center vertically */
+  top: -100%; /* Adjust to center vertically */
   left: 50%; /* Center horizontally in its grid cell */
   transform: translateX(-50%); /* Corrects positioning to align perfectly */
 }
