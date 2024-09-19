@@ -38,18 +38,27 @@
   color: inherit;
 }
 
+.splash-page {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
 .nav-container {
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 80%;
 }
 
 #quick-links {
   /* border: 2px solid red; */
   display: grid;
   grid-template-columns: auto auto;
-  gap: 300px; 
+  gap:500px; 
   list-style: none;
   padding: 0;
   margin: 0;
@@ -74,10 +83,10 @@
 .separator {
   background-color: black; /* Color of the separator line */
   width: 10px; /* Width of the line */
-  height: 400px; /* Set a larger height */
+  height: 500px; /* Set a larger height */
   display: block;
   position: absolute; /* Position the line absolutely within the grid */
-  top: -300%; /* Adjust to center vertically */
+  top: -200%; /* Adjust to center vertically */
   left: 50%; /* Center horizontally in its grid cell */
   transform: translateX(-50%); /* Corrects positioning to align perfectly */
 }
