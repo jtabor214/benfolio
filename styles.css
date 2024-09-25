@@ -25,12 +25,21 @@
   flex: 1;
 }
 
+.w3-container{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
 #personal-links {
   /* border: 2px solid green; */
   font-size: 5vw;
   display: flex;
-  flex-direction: row;
-  gap: 190px;
+  justify-content: center;
+  align-items: center;  
+  width: 80%;
   padding-top: 40px;
 }
 
