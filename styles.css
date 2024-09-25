@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: row;
   gap: 190px;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 #personal-links a {
@@ -47,12 +47,12 @@
 }
 
 #nav-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 100vh;
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #nav-container a {
@@ -62,7 +62,6 @@
   font-size: 6vw;
   font-family: custom;
   display: flex;
-  justify-content: center
 }
 
 #online-media-link{
@@ -74,11 +73,22 @@
 
 #screenwriting-link{
   /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#separator {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content-section {
+  border: 1px solid blue;
   display: none;
   padding: 20px;
   margin-top: 20px;
-  border: 1px solid blue;
 }
