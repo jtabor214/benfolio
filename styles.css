@@ -6,7 +6,7 @@
 }
 
 #banner {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   border-bottom: 20px solid black;
   display: flex;
   flex-direction: column;
@@ -20,14 +20,14 @@
   
 #home-header {
   /* border: 1px solid red; */
-  font-size: 180px;
+  font-size: 15vw;
   cursor: pointer;
   flex: 1;
 }
 
 #personal-links {
   /* border: 2px solid green; */
-  font-size: 70px;
+  font-size: 5vw;
   display: flex;
   flex-direction: row;
   gap: 190px;
@@ -46,67 +46,39 @@
   align-items: center;  
 }
 
-.nav-container {
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#nav-container {
+  border: 2px solid red;
   height: 100vh;
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#quick-links {
-  /* border: 2px solid red; */
-  display: grid;
-  grid-template-columns: auto auto;
-  gap:500px; 
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  /* max-width: 600px; */
-  width: 100%;
-  position: relative;
-}
-
-#quick-link li {
-  text-align: center;
-  position: relative;
-}
-
-#quick-links li a {
+#nav-container a {
   text-decoration: none;
   color: black;
   display: block;
-  font-size: 130px;
+  font-size: 6vw;
   font-family: custom;
+  display: flex;
+  justify-content: center
 }
 
-.separator {
-  background-color: black; /* Color of the separator line */
-  width: 25px; /* Width of the line */
-  height: 700px; /* Set a larger height */
-  display: block;
-  position: absolute; /* Position the line absolutely within the grid */
-  top: -100%; /* Adjust to center vertically */
-  left: 50%; /* Center horizontally in its grid cell */
-  transform: translateX(-50%); /* Corrects positioning to align perfectly */
-}
-
-.dropdown-content li a {
-  border: 1px solid blue;
+#online-media-link{
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  color: white;
-  /* padding: 5px; */
-  text-decoration: none;
-  font-size: 40px;
+  align-items: center;
+}
 
+#screenwriting-link{
+  /* border: 2px solid red; */
 }
 
 .content-section {
   display: none;
   padding: 20px;
   margin-top: 20px;
-  /* background-color: #f4f4f4; */
   border: 1px solid blue;
 }
