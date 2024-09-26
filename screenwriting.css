@@ -30,6 +30,21 @@ height: 30vh;
 width: 100%;
 }
 
-.sw-grid {
-  
+.sw-grid .w3-bar {
+  font-size: 1vw;
+  color: white;
+}
+
+.w3-third {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.w3-card-4 {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
