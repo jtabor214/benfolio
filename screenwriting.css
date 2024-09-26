@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+}
+
+.w3-bar{
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  font-size: 1.5vw;
+}
+
+.sw-splash-container{
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sw-content-container {
+  border: 2px solid blue;
+  width: 80%;
+  height: 100vh;
+}
