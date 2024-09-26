@@ -8,25 +8,27 @@ a {
   align-items: center;
   color: white;
   background-color: rgb(33, 33, 33);
-  font-size: 1.5vw;
+  font-size: 1vw;
+
 }
 
 .sw-splash-container{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .sw-content-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   background-color: black;
-  width: 80%;
+  width: 100%;
+  max-width: 915px;
   height: 100vh;
 }
 
 .slideshow .mySlides {
-height: 30vh;
+height: 15vh;
 width: 100%;
 }
 
@@ -41,10 +43,12 @@ width: 100%;
   justify-content: center; */
 }
 
+#thumbnail {
+  height: 80%;
+  width: 90%;
+}
+
 .w3-card-4 {
   height: 25vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
+  color: white;
 }
