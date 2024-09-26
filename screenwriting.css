@@ -20,6 +20,16 @@ a {
 
 .sw-content-container {
   border: 2px solid blue;
+  background-color: black;
   width: 80%;
   height: 100vh;
+}
+
+.slideshow .mySlides {
+height: 30vh;
+width: 100%;
+}
+
+.sw-grid {
+  
 }
