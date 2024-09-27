@@ -33,7 +33,7 @@ width: 100%;
 }
 
 .sw-grid .w3-bar {
-  font-size: calc(3px + 1vw);
+  font-size: calc(8px + 0.5vw);
   color: white;
 }
 
@@ -51,4 +51,5 @@ width: 100%;
 .w3-card-4 {
   height: 25vh;
   color: white;
+  font-size: calc(8px + 0.5vw);
 }
