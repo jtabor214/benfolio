@@ -48,6 +48,16 @@
   color: inherit;
 }
 
+.w3-modal {
+  height: 50vh;
+  width: 70%;
+}
+
+#contact-modal-content{
+  background-color: none;
+  color: black;
+}
+
 .splash-page {
   /* border: 2px solid blue; */
   display: flex;

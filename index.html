@@ -16,14 +16,33 @@
     </header>
 
     <div class="w3-row" id="personal-links">
+
       <div class="w3-container w3-col" style="width:50%">
         <a href="about-me.html" class="nav-link" id="about-link">ABOUT ME</a>
       </div>
-      <div class="w3-container w3-col" style="width:50%">
-        <a href="contact.html" class="nav-link">CONTACT</a>
-      </div>
-    </div>
 
+      <div class="w3-container w3-col">
+        <button onclick="document.getElementById('contact-modal').style.display='block'" class="w3-button">CONTACT</button>
+
+        <div id="contact-modal" class="w3-modal">
+          <div id="contact-modal-content" class="w3-modal-content">
+            <header class="w3-container"> 
+              <span onclick="document.getElementById('contact-modal').style.display='none'" 
+              class="w3-button w3-display-topright">&times;</span>
+              <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+              <p>Some text..</p>
+              <p>Some text..</p>
+            </div>
+            <footer class="w3-container">
+              <p>Modal Footer</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div class="splash-page">
