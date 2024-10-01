@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>benmakesmedia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
 
@@ -23,29 +23,24 @@
       </div>
 
       <div class="w3-container w3-col">
-
         <button onclick="document.getElementById('contact-modal').style.display='block'" class="w3-button w3-hover-none">CONTACT</button>
-
-        <div id="contact-modal" class="w3-modal w3-display-middle">
-          <div id="contact-modal-content" class="w3-modal-content">
-            <header class="w3-container"> 
-              <span onclick="document.getElementById('contact-modal').style.display='none'" 
-              id="close-modal-button" class="w3-button w3-hover-none w3-display-topright">x</span>
-            </header>
-            <div id="contact-links" class="w3-container w3-display-middle">
-              <p>benmakesmedia@gmail.com</p>
-              <i class="fa-brands fa-linkedin-in"></i>            
-            </div>
-            <footer class="w3-container">
-            </footer>
-          </div>
-        </div>
       </div>
 
     </div>
   </div>
 
   <div class="splash-page">
+
+    <div id="contact-modal" class="w3-modal">
+      <div id="contact-modal-content" class="w3-modal-content w3-animate-bottom">
+          <span onclick="document.getElementById('contact-modal').style.display='none'" 
+          id="close-modal-button" class="w3-button w3-hover-none w3-display-topright">&times;</span>
+        <div id="contact-links" class="w3-container w3-display-middle">
+          <p>benmakesmedia@gmail.com</p>
+          <i class="fa-brands fa-linkedin-in"></i>            
+        </div>
+      </div>
+    </div>
 
     <div class="w3-row" id="nav-container">
       <div class="w3-col w3-container" style="width:49%">
