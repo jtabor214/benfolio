@@ -58,6 +58,7 @@
 
 #contact-modal-content{
   /* border: 2px solid blue; */
+  border-radius: 2%;
   height: 90%;
   background-color: none;
   color: black;
