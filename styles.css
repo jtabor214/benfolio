@@ -32,7 +32,6 @@
   align-items: center;  
 }
 
-
 #personal-links {
   /* border: 2px solid green; */
   font-size: 5vw;
@@ -49,13 +48,27 @@
 }
 
 .w3-modal {
-  height: 50vh;
-  width: 70%;
+  height: 60vh;
+  width: 90%;
+}
+
+#close-modal-button{
+  background-color: none;
 }
 
 #contact-modal-content{
+  border: 2px solid blue;
+  height: 100%;
   background-color: none;
   color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(12px + 2.5vw);
+}
+
+#contact-links {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .splash-page {
