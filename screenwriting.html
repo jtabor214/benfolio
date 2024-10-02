@@ -35,35 +35,48 @@
         </div>
 
         <div class="w3-row sw-grid" id="thumbnail-grid">
-          <div class="w3-third w3-container w3-left w3-padding-16">
-            <div class="w3-card-4 w3-mobile">
-              <img src="images/placeholder.jpg" class="w3-image thumbnail" alt="Thumbnail 1" data-info="info1">
-              <p>Thumbnail 1</p>
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder.jpg" class="w3-image thumbnail" alt="Thumbnail 1" data-info="info1">
+                <p>Thumbnail 1</p>
+              </div>
             </div>
-          </div>
-          <div class="w3-third w3-container w3-left w3-padding-16">
-            <div class="w3-card-4 w3-mobile">
-              <img src="images/placeholder2.jpg" class="w3-image thumbnail" alt="Thumbnail 2" data-info="info2">
-              <p>Thumbnail 2</p>
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder2.jpg" class="w3-image thumbnail" alt="Thumbnail 2" data-info="info2">
+                <p>Thumbnail 2</p>
+              </div>
             </div>
-          </div>
-          <div class="w3-third w3-container w3-left w3-padding-16">
-            <div class="w3-card-4 w3-mobile">
-              <img src="images/placeholder3.jpg" class="w3-image thumbnail" alt="Thumbnail 3" data-info="info3">
-              <p>Thumbnail 3</p>
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder3.jpg" class="w3-image thumbnail" alt="Thumbnail 3" data-info="info3">
+                <p>Thumbnail 3</p>
+              </div>
             </div>
-          </div>
         </div>
 
-      </div>
+<!-- information containers -->
+        <div id="info1" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 1 Details</h2>
+            <p style="color: white;">More information about Thumbnail 1.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+        <div id="info2" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 2 Details</h2>
+            <p style="color: white;">More information about Thumbnail 2.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+        <div id="info3" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 3 Details</h2>
+            <p style="color: white;">More information about Thumbnail 3.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+<!-- information containers -->
+
+        </div>
     </div>
 
   </div>
-
-  <!-- <section id="screenwriting">
-    <h2>Screenwriting</h2>
-    <p>Projects listed here.</p>
-  </section> -->
 
   <footer>
     <div class="w3-bar">
@@ -88,8 +101,43 @@
       x[myIndex-1].style.display = "block";  
       setTimeout(carousel, 3000); // Change image every 3 seconds
     }
-    </script>
+  </script>
 
-  <!-- <script src="./loadNavbar.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all thumbnail images
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      const thumbnailGrid = document.getElementById('thumbnail-grid');
+      const infoContents = document.querySelectorAll('.info-content');
+  
+      // Add click event listeners to each thumbnail
+      thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function () {
+          const infoId = this.getAttribute('data-info');
+          const infoContent = document.getElementById(infoId);
+
+          // Hide the thumbnail grid
+          thumbnailGrid.style.display = 'none';
+
+          // Hide all info content sections
+          infoContents.forEach(info => info.style.display = 'none');
+
+          // Show the selected info content
+          if (infoContent) {
+            infoContent.style.display = 'block';
+          }
+        });
+      });
+    });
+
+		function showThumbnails() {
+ 		// Hide all info content sections
+  	document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
+
+  	// Show the thumbnail grid
+  	document.getElementById('thumbnail-grid').style.display = 'block';
+		}
+  </script>
+
 </body>
 </html>
