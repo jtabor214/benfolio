@@ -1,0 +1,62 @@
+a {
+  text-decoration: none;
+}
+
+.w3-bar{
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  font-size: calc(12px + 1vw);
+
+}
+
+.sw-splash-container{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sw-content-container {
+  /* border: 2px solid blue; */
+  background-color: black;
+  width: 100%;
+  max-width: 915px;
+  height: 100vh;
+}
+
+.slideshow .mySlides {
+height: 15vh;
+width: 100%;
+}
+
+.sw-grid .w3-bar {
+  font-size: calc(8px + 0.5vw);
+  color: white;
+  overflow: auto;
+}
+
+.w3-third {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+#thumbnail {
+  height: 80%;
+  width: 90%;
+}
+
+.w3-card-4 {
+  height: 25vh;
+  color: white;
+  font-size: calc(8px + 0.5vw);
+}
+
+footer .w3-bar{
+  font-size: calc(6px + 0.5vw);
+  color: rgb(159, 162, 163);
+  background-color: rgb(55, 55, 55);
+}

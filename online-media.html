@@ -2,42 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <!-- Link to Global Stylesheet -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="online-media.css">
-    <!-- Optional: Link to Page-Specific Stylesheet -->
-    <!-- <link rel="stylesheet" href="screenwriting.css"> -->
+    <title>benmakesmedia</title>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header id="home-header">
-        <h1>BEN WEBSTER</h1>
-        <!-- Optional: Add a navigation link back to the home page -->
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-    </header>
+  <header>
+    <div class="w3-bar">
+      <div class="w3-bar-item" id="rt-home-button">
+        <a href="index.html">benmakesmedia</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Main Content Section -->
-    <div id="navbar-placeholder"></div>
+  <div class="sw-splash-container">
+
+    <div class="sw-content-container">
+      <div class="slideshow">
+        <img class="mySlides" src="images/placeholder.jpg">
+        <img class="mySlides" src="images/placeholder2.jpg">
+        <img class="mySlides" src="images/placeholder3.jpg">
+      </div>
+
+      <div class="sw-grid">
+        <div class="w3-bar w3-black">
+          <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-black w3-border-black w3-topbar w3-hover-border-white">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-black w3-border-black w3-topbar w3-hover-border-white">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-black w3-border-black w3-topbar w3-hover-border-white">Link 3</a>
+        </div>
+
+        <div class="w3-row sw-grid" id="thumbnail-grid">
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder.jpg" class="w3-image thumbnail" alt="Thumbnail 1" data-info="info1">
+                <p>Thumbnail 1</p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder2.jpg" class="w3-image thumbnail" alt="Thumbnail 2" data-info="info2">
+                <p>Thumbnail 2</p>
+              </div>
+            </div>
+            <div class="w3-third w3-container w3-left w3-padding-16">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder3.jpg" class="w3-image thumbnail" alt="Thumbnail 3" data-info="info3">
+                <p>Thumbnail 3</p>
+              </div>
+            </div>
+        </div>
+
+<!-- information containers -->
+        <div id="info1" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 1 Details</h2>
+            <p style="color: white;">More information about Thumbnail 1.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+        <div id="info2" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 2 Details</h2>
+            <p style="color: white;">More information about Thumbnail 2.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+        <div id="info3" class="w3-container info-content" style="display:none;">
+            <h2 style="color: white;">Thumbnail 3 Details</h2>
+            <p style="color: white;">More information about Thumbnail 3.</p>
+						<button class="w3-button" onclick="showThumbnails()">Back to Thumbnails</button>
+        </div>
+<!-- information containers -->
+
+        </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="w3-bar">
+      <div class="w3-bar-item">
+        <a href="index.html">&copy; benmakesmedia</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var myIndex = 0;
+    carousel();
     
-    <main>
-        <section id="main-content">
-            <h2>Page Title</h2>
-            <p>Content specific to this page goes here. Update this text as needed.</p>
-        </section>
-    </main>
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+  </script>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Ben Makes Media</p>
-    </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all thumbnail images
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      const thumbnailGrid = document.getElementById('thumbnail-grid');
+      const infoContents = document.querySelectorAll('.info-content');
+  
+      // Add click event listeners to each thumbnail
+      thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function () {
+          const infoId = this.getAttribute('data-info');
+          const infoContent = document.getElementById(infoId);
 
-    <!-- Optional: Link to JavaScript File -->
-    <script src="./loadNavbar.js"></script>
-    <!-- <script src="scripts.js"></script> -->
+          // Hide the thumbnail grid
+          thumbnailGrid.style.display = 'none';
+
+          // Hide all info content sections
+          infoContents.forEach(info => info.style.display = 'none');
+
+          // Show the selected info content
+          if (infoContent) {
+            infoContent.style.display = 'block';
+          }
+        });
+      });
+    });
+
+		function showThumbnails() {
+ 		// Hide all info content sections
+  	document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
+
+  	// Show the thumbnail grid
+  	document.getElementById('thumbnail-grid').style.display = 'block';
+		}
+  </script>
+
 </body>
 </html>
