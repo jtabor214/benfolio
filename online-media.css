@@ -55,6 +55,11 @@ width: 100%;
   font-size: calc(8px + 0.5vw);
 }
 
+.info-content {
+  border: 2px solid red;
+  color: white;
+}
+
 footer .w3-bar{
   font-size: calc(6px + 0.5vw);
   color: rgb(159, 162, 163);
