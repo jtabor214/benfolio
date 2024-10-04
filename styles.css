@@ -12,7 +12,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 50px 80px 50px;
   background-color: rgb(241, 227, 84);
   color: white;
   font-family: custom;
@@ -20,8 +19,9 @@
   
 #home-header h1 {
   /* border: 1px solid red; */
+  margin: 0;
   font-family: custom;
-  font-size: 15vw;
+  font-size: 12vw;
   cursor: pointer;
   flex: 1;
 }
@@ -40,7 +40,6 @@
   justify-content: center;
   align-items: center;  
   width: 80%;
-  padding-top: 40px;
 }
 
 #personal-links a {

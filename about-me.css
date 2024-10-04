@@ -1,0 +1,31 @@
+h3 {
+  margin: 0;
+}
+
+#nav-bar {
+  border: 2p solid blue;
+}
+
+#nav-bar li {
+  /* border: 1px solid blue; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#about-me-splash {
+  border: 2px solid red;
+  background-color: black;
+  height: 100vh;
+}
+
+#about-me-container {
+  border: 2px solid red;
+  max-width: 915px;
+}
+
+#profile-picture {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
