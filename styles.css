@@ -14,12 +14,13 @@
   justify-content: center;
   background-color: rgb(241, 227, 84);
   color: white;
-  font-family: custom;
+  font-family: Courier;
+  font-weight: 600;
 }
   
 #home-header h1 {
   /* border: 1px solid red; */
-  margin: 0;
+  transform: translateY(50px);
   font-family: custom;
   font-size: 12vw;
   cursor: pointer;
@@ -47,10 +48,6 @@
   color: inherit;
 }
 
-.w3-modal {
-  /* border: 2px solid red; */
-}
-
 #close-modal-button{
   background-color: none;
 }
@@ -60,16 +57,20 @@
   border-radius: 2%;
   height: 90%;
   background-color: none;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: calc(10px + 1.5vw);
-}
-
-#contact-links {
-  /* border: 2px solid red; */
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
+  background: none;
+  /* color: black; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-size: calc(10px + 1.5vw); */
+}
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  height: 85%;
+  width: 70%;
 }
 
 .splash-page {
@@ -91,8 +92,9 @@
   text-decoration: none;
   color: black;
   display: block;
-  font-size: 6vw;
-  font-family: custom;
+  font-size: 4vw;
+  font-family: Courier;
+  font-weight: 600;
   display: flex;
 }
 

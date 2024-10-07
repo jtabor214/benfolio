@@ -1,0 +1,19 @@
+{
+    "name": "jake/benfolio",
+    "description": "Set up Composer in order to incorporate PHPMailer functionality",
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jake\\Benfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jacob Tabor",
+            "email": "jtabor214@gmail.com"
+        }
+    ]
+}
