@@ -27,9 +27,9 @@ a {
   height: 100vh;
 }
 
-.slideshow .mySlides {
-height: 15vh;
-width: 100%;
+#header-image {
+  width: 100%;
+  max-height: 20vh;
 }
 
 .sw-grid .w3-bar {
@@ -45,8 +45,11 @@ width: 100%;
 }
 
 #thumbnail {
-  height: 80%;
-  width: 90%;
+  
+}
+
+.thumbnail-image{
+
 }
 
 .w3-card-4 {

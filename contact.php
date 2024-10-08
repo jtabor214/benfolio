@@ -4,6 +4,15 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
+// Display errors on the web page (useful for debugging)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Log errors to a file called 'error_log' in the same directory
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/error_log'); // Logs errors to error_log file in current directory
+
 // Load environment variables from .env file
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
