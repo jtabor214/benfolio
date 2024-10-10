@@ -73,7 +73,7 @@
               </div>
             </div>
             
-            <div class="h-captcha" data-captcha="true" style="margin: 5px; display: flex; align-items: center; justify-content: center;"></div>
+            <div id="captcha-id" class="h-captcha" data-captcha="true" style="margin: 5px; display: flex; align-items: center; justify-content: center;"></div>
             
             <button type="submit" class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
             
@@ -104,5 +104,18 @@
 
   <script src="./index.js"></script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script>
+    const form = document.getElementById('captcha-id');
+    form.addEventListener('submit', function(e) {
+    
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+  </script>
 </body>
 </html>
