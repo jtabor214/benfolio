@@ -105,16 +105,13 @@
   <script src="./index.js"></script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
   <script>
-    const form = document.getElementById('captcha-id');
-    form.addEventListener('submit', function(e) {
-    
-        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-    
-        if (!hCaptcha) {
-            e.preventDefault();
-            alert("Please fill out captcha field")
-            return
-        }
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      const hCaptchaResponse = hcaptcha.getResponse();  // Use hcaptcha's API to get the CAPTCHA response
+      
+      if (!hCaptchaResponse) {  // If no CAPTCHA response, block form submission
+        e.preventDefault();
+        alert("Please complete the CAPTCHA.");
+      }
     });
   </script>
 </body>
