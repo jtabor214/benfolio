@@ -43,6 +43,7 @@
           <input type="hidden" name="access_key" value="75e8e0b3-686c-4204-bc06-4ef3a43fb145">
           <input type="hidden" name="subject" value="New Contact Opportunity">
           <input type="hidden" name="from_name" value="benmakesmedia.com">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <input type="hidden" name="redirect" value="https://web3forms.com/success">
           
           <div class="w3-row w3-section">
@@ -73,7 +74,7 @@
               </div>
             </div>
             
-            <div id="captcha-id" class="h-captcha" data-captcha="true" data-sitekey="75e8e0b3-686c-4204-bc06-4ef3a43fb145" style="margin: 5px; display: flex; align-items: center; justify-content: center;"></div>
+            <!-- <div id="captcha-id" class="h-captcha" data-captcha="true" data-sitekey="75e8e0b3-686c-4204-bc06-4ef3a43fb145" style="margin: 5px; display: flex; align-items: center; justify-content: center;"></div> -->
             
             <button type="submit" class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
             
@@ -104,8 +105,8 @@
 
   <script src="./index.js"></script>
   <script src="https://web3forms.com/client/script.js" async defer></script>
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>  
-  <script>
+  <!-- <script src="https://js.hcaptcha.com/1/api.js" async defer></script>   -->
+  <!-- <script>
     const form = document.getElementById('contact-form');
     
     form.addEventListener('submit', function(e) {
@@ -118,6 +119,6 @@
             return
         }
     });
-    </script>
+    </script> -->
 </body>
 </html>
