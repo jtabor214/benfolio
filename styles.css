@@ -96,6 +96,12 @@
   font-family: Courier;
   font-weight: 600;
   display: flex;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  text-shadow: 5px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  transform: translateY(-3px); /* Raise the text slightly */
 }
 
 #online-media-link{

@@ -50,6 +50,7 @@ a {
 
 #thumbnail-card:hover p {
   text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 .thumbnail-image{
