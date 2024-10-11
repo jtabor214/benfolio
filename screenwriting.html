@@ -21,61 +21,24 @@
   <div class="sw-splash-container">
 
     <div class="sw-content-container">
+      
+      <h2>Screenwriting</h2>
 
-        <div class="w3-row sw-grid" id="thumbnail-grid">
-            <div class="w3-third w3-container w3-left w3-padding-16">
-              <div class="w3-card-4 w3-mobile">
-                <h1>Screenwriting</h1>
-                <h3>Script #1</h3>
-                <h4>Description of the script</h4>
-                <p>logline</p>
-              </div>
-            </div>
+      <div id="sw-grid" class="w3-container">
+
+        <button onclick="myFunction('Demo1', this)" class="w3-btn w3-block w3-black w3-left-align"><h4>Script #1 <i class="arrow right"></i></h4></button>
+        <div id="Demo1" class="w3-container w3-hide w3-animate-right">
+          <h5>Description of the script</h5>
+          <p>logline</p>
+        </div>
+        
+        <button onclick="myFunction('Demo2', this)" class="w3-btn w3-block w3-black w3-left-align"><h4>Script #2 <i class="arrow right"></i></h4></button>
+        <div id="Demo2" class="w3-container w3-hide w3-animate-right">
+          <h5>Description of the script</h5>
+          <p>logline</p>
         </div>
 
-<!-- information containers -->
-        <div id="info1" class="w3-container info-content" style="display:none;">
-          <div class="w3-row">
-            <div class="w3-col w3-container w3-green" style="width:60%">
-              <h3>Thumbnail 1 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
-            </div>
-            <div class="w3-col w3-container w3-blue" style="width:40%">
-              <img src="images/placeholder.jpg" class="w3-image">
-            </div>
-          </div>
-					<button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
-        </div>
-        <div id="info2" class="w3-container info-content" style="display:none;">
-          <div class="w3-row">
-            <div class="w3-col w3-container w3-green" style="width:60%">
-              <h3>Thumbnail 2 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
-            </div>
-            <div class="w3-col w3-container w3-blue" style="width:40%">
-              <img src="images/placeholder.jpg" class="w3-image">
-            </div>
-          </div>
-					<button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
-        </div>
-        <div id="info3" class="w3-container info-content" style="display:none;">
-          <div class="w3-row">
-            <div class="w3-col w3-container w3-green" style="width:60%">
-              <h3>Thumbnail 3 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
-            </div>
-            <div class="w3-col w3-container w3-blue" style="width:40%">
-              <img src="images/placeholder.jpg" class="w3-image">
-            </div>
-          </div>
-					<button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
-        </div>
-<!-- information containers -->
-
-        </div>
+      </div>
     </div>
 
   </div>
@@ -89,57 +52,27 @@
   </footer>
 
   <script>
-    var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+    function myFunction(id, element) {
+      var x = document.getElementById(id);
+      var arrow = element.querySelector(".arrow"); // Get the arrow element
+
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show"; // Show the accordion
+        arrow.classList.remove("right");
+        arrow.classList.add("down"); // Rotate arrow up
+      } else {
+        x.className = x.className.replace(" w3-show", ""); // Hide the accordion
+        arrow.classList.remove("down");
+        arrow.classList.add("right"); // Rotate arrow down
       }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 3000); // Change image every 3 seconds
     }
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Get all thumbnail images
-      const thumbnails = document.querySelectorAll('.thumbnail');
-      const thumbnailGrid = document.getElementById('thumbnail-grid');
-      const infoContents = document.querySelectorAll('.info-content');
-  
-      // Add click event listeners to each thumbnail
-      thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function () {
-          const infoId = this.getAttribute('data-info');
-          const infoContent = document.getElementById(infoId);
-
-          // Hide the thumbnail grid
-          thumbnailGrid.style.display = 'none';
-
-          // Hide all info content sections
-          infoContents.forEach(info => info.style.display = 'none');
-
-          // Show the selected info content
-          if (infoContent) {
-            infoContent.style.display = 'block';
-          }
-        });
-      });
-    });
-
-		function showThumbnails() {
- 		// Hide all info content sections
-  	document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
-
-  	// Show the thumbnail grid
-  	document.getElementById('thumbnail-grid').style.display = 'block';
-		}
   </script>
 
 </body>
 </html>
+
+
+<h1>Screenwriting</h1>
+<h3>Script #1</h3>
+<h4>Description of the script</h4>
+<p>logline</p>

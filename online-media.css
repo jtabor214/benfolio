@@ -8,7 +8,7 @@ a {
   align-items: center;
   color: white;
   background-color: rgb(33, 33, 33);
-  font-size: calc(12px + 0.8vw);
+  font-size: calc(12px + 0.6vw);
   font-family: 'Courier New', Courier, monospace;
 }
 
