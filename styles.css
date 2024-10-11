@@ -119,3 +119,9 @@
   align-items: center;
   justify-content: center;
 }
+
+footer .w3-bar{
+  font-size: calc(6px + 0.5vw);
+  color: rgb(159, 162, 163);
+  background-color: rgb(55, 55, 55);
+}

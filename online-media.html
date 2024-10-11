@@ -18,40 +18,64 @@
     </div>
   </header>
 
-  <div class="sw-splash-container">
-
-    <div class="sw-content-container">
-      <img src="images/placeholder3.jpg" id="header-image" class="w3-image" alt="Thumbnail 3">
+  <div class="om-splash-container">
+    
+    <div class="om-content-container">
       
-      <div class="sw-grid">
+      <img src="images/placeholder3.jpg" id="header-image" class="w3-image" alt="Thumbnail 3">
 
-        <div class="w3-row sw-grid" id="thumbnail-grid">
-            <div id="thumbnail" class="w3-third w3-container w3-left w3-padding-16">
+      <div class="om-grid">
+
+        <div class="w3-row thumbnail-grid">
+
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info1">
               <div class="w3-card-4 w3-mobile">
-                <img src="images/placeholder.jpg" class="w3-image thumbnail-image" alt="Thumbnail 1" data-info="info1">
+                <img src="images/placeholder.jpg" class="w3-image thumbnail-image" alt="Thumbnail 1">
                 <p>Thumbnail 1</p>
               </div>
             </div>
-            <div class="w3-third w3-container w3-left w3-padding-16">
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info2">
               <div class="w3-card-4 w3-mobile">
-                <img src="images/placeholder2.jpg" class="w3-image thumbnail-image" alt="Thumbnail 2" data-info="info2">
+                <img src="images/placeholder2.jpg" class="w3-image thumbnail-image" alt="Thumbnail 2">
                 <p>Thumbnail 2</p>
               </div>
             </div>
-            <div class="w3-third w3-container w3-left w3-padding-16">
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info3">
               <div class="w3-card-4 w3-mobile">
-                <img src="images/placeholder3.jpg" class="w3-image thumbnail-image" alt="Thumbnail 3" data-info="info3">
+                <img src="images/placeholder3.jpg" class="w3-image thumbnail-image" alt="Thumbnail 3">
                 <p>Thumbnail 3</p>
               </div>
             </div>
         </div>
-<!-- information containers -->
+
+        <div class="w3-row thumbnail-grid">
+          
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info4">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder.jpg" class="w3-image thumbnail-image" alt="Thumbnail 4">
+                <p>Thumbnail 4</p>
+              </div>
+            </div>
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info5">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder2.jpg" class="w3-image thumbnail-image" alt="Thumbnail 5">
+                <p>Thumbnail 5</p>
+              </div>
+            </div>
+            <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info6">
+              <div class="w3-card-4 w3-mobile">
+                <img src="images/placeholder3.jpg" class="w3-image thumbnail-image" alt="Thumbnail 6">
+                <p>Thumbnail 6</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- information containers for each thumbnail -->
         <div id="info1" class="w3-container info-content" style="display:none;">
           <div class="w3-row">
             <div class="w3-col w3-container w3-green" style="width:60%">
               <h3>Thumbnail 1 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
+              <p>Details about Thumbnail 1...</p>
             </div>
             <div class="w3-col w3-container w3-blue" style="width:40%">
               <img src="images/placeholder.jpg" class="w3-image">
@@ -59,12 +83,12 @@
           </div>
           <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
         </div>
+        
         <div id="info2" class="w3-container info-content" style="display:none;">
           <div class="w3-row">
             <div class="w3-col w3-container w3-green" style="width:60%">
               <h3>Thumbnail 2 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
+              <p>Details about Thumbnail 2...</p>
             </div>
             <div class="w3-col w3-container w3-blue" style="width:40%">
               <img src="images/placeholder.jpg" class="w3-image">
@@ -72,12 +96,12 @@
           </div>
           <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
         </div>
+
         <div id="info3" class="w3-container info-content" style="display:none;">
           <div class="w3-row">
             <div class="w3-col w3-container w3-green" style="width:60%">
               <h3>Thumbnail 3 Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et urna odio. Aliquam vulputate quam nec ipsum interdum volutpat. Aliquam nec auctor massa. Vestibulum urna felis, egestas eu porttitor blandit, blandit hendrerit mauris. Nunc sit amet erat quam. Nullam in condimentum massa. Donec at rutrum dolor. Phasellus rutrum ut libero nec suscipit.
-                Ut sagittis ex vel velit consectetur tristique. Morbi blandit blandit nunc, eget condimentum enim sollicitudin eget. Nulla purus tortor, varius vitae lacinia at, commodo sed felis. In dignissim est a justo iaculis tempus. Cras lacus felis, faucibus id commodo sit amet, commodo eu risus. Phasellus vel quam justo. Quisque imperdiet, leo sit amet ultricies dapibus, nulla lacus auctor ante, ut feugiat erat sapien eu lorem. Ut vulputate luctus feugiat. Curabitur gravida eleifend consequat. Donec finibus, justo sed tempus laoreet, libero ante lacinia eros, eget fermentum mauris nunc in elit. Donec accumsan nec ante ut lobortis. Donec feugiat felis odio, sit amet molestie ante tincidunt ut. Aliquam ullamcorper ligula sed suscipit maximus. Nullam eu ipsum ut tellus commodo pellentesque semper ac erat..</p>
+              <p>Details about Thumbnail 3...</p>
             </div>
             <div class="w3-col w3-container w3-blue" style="width:40%">
               <img src="images/placeholder.jpg" class="w3-image">
@@ -85,7 +109,45 @@
           </div>
           <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
         </div>
-<!-- information containers -->
+
+        <div id="info4" class="w3-container info-content" style="display:none;">
+          <div class="w3-row">
+            <div class="w3-col w3-container w3-green" style="width:60%">
+              <h3>Thumbnail 4 Details</h3>
+              <p>Details about Thumbnail 4...</p>
+            </div>
+            <div class="w3-col w3-container w3-blue" style="width:40%">
+              <img src="images/placeholder.jpg" class="w3-image">
+            </div>
+          </div>
+          <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
+        </div>
+
+        <div id="info5" class="w3-container info-content" style="display:none;">
+          <div class="w3-row">
+            <div class="w3-col w3-container w3-green" style="width:60%">
+              <h3>Thumbnail 5 Details</h3>
+              <p>Details about Thumbnail 5...</p>
+            </div>
+            <div class="w3-col w3-container w3-blue" style="width:40%;">
+              <img src="images/placeholder.jpg" class="w3-image">
+            </div>
+          </div>
+          <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
+        </div>
+
+        <div id="info6" class="w3-container info-content" style="display:none;">
+          <div class="w3-row">
+            <div class="w3-col w3-container w3-green" style="width:60%">
+              <h3>Thumbnail 6 Details</h3>
+              <p>Details about Thumbnail 6...</p>
+            </div>
+            <div class="w3-col w3-container w3-blue" style="width:40%">
+              <img src="images/placeholder.jpg" class="w3-image">
+            </div>
+          </div>
+          <button class="w3-button w3-round w3-margin-top" onclick="showThumbnails()">Back</button>
+        </div>
       </div>
     </div>
 
@@ -94,48 +156,26 @@
   <footer>
     <div class="w3-bar">
       <div class="w3-bar-item">
-        <a href="index.html">&copy; benmakesmedia</a>
+        <p>&copy; benmakesmedia</p>
       </div>
     </div>
   </footer>
 
   <script>
-    var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 3000); // Change image every 3 seconds
-    }
-  </script>
-
-  <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Get all thumbnail images
-      const thumbnails = document.querySelectorAll('.thumbnail');
-      const thumbnailGrid = document.getElementById('thumbnail-grid');
+      const thumbnailCards = document.querySelectorAll('#thumbnail-card');
+      const thumbnailGrids = document.querySelectorAll('.thumbnail-grid');
       const infoContents = document.querySelectorAll('.info-content');
   
-      // Add click event listeners to each thumbnail
-      thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function () {
+      thumbnailCards.forEach(card => {
+        card.addEventListener('click', function () {
           const infoId = this.getAttribute('data-info');
           const infoContent = document.getElementById(infoId);
 
-          // Hide the thumbnail grid
-          thumbnailGrid.style.display = 'none';
+          thumbnailGrids.forEach(grid => grid.style.display = 'none');
 
-          // Hide all info content sections
           infoContents.forEach(info => info.style.display = 'none');
 
-          // Show the selected info content
           if (infoContent) {
             infoContent.style.display = 'block';
           }
@@ -143,13 +183,10 @@
       });
     });
 
-		function showThumbnails() {
- 		// Hide all info content sections
-  	document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
-
-  	// Show the thumbnail grid
-  	document.getElementById('thumbnail-grid').style.display = 'block';
-		}
+    function showThumbnails() {
+      document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
+      document.querySelectorAll('.thumbnail-grid').forEach(grid => grid.style.display = 'flex');
+    }
   </script>
 
 </body>
