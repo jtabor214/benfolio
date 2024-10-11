@@ -13,15 +13,16 @@
 }
 
 #nav-bar {
-  /* border: 2p solid blue; */
+  /* border: 2px solid blue; */
   height: 10%;
-  width: 45%;
+  width: 50%;
   transform-origin: left top; /* Set the point of rotation to the top-left */
   transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
 }
 
 #nav-bar li {
   /* border: 1px solid blue; */
+  width: 80%;
   list-style: none;
   margin: 0;
   padding: 0;
