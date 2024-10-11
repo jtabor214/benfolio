@@ -20,7 +20,7 @@
   
 #home-header h1 {
   /* border: 1px solid red; */
-  transform: translateY(50px);
+  transform: translateY(20px);
   font-family: custom;
   font-size: 12vw;
   cursor: pointer;
