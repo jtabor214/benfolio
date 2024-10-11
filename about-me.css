@@ -1,9 +1,23 @@
-h3 {
-  margin: 0;
+#about-me-container h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 3px 3px 0px rgb(231, 212, 7);
+}
+
+#about-me-container h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 #nav-bar {
-  border: 2p solid blue;
+  /* border: 2p solid blue; */
+  height: 10%;
+  width: 45%;
+  transform-origin: left top; /* Set the point of rotation to the top-left */
+  transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
 }
 
 #nav-bar li {
@@ -11,21 +25,61 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 2.3vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 900;
+
 }
 
+#close-modal-button{
+  background-color: none;
+}
+
+#contact-modal-content{
+  /* border: 2px solid blue; */
+  height: 90%;
+  background-color: none;
+  display: flex; 
+  flex-direction: column;
+  background: none;
+  /* color: black; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-size: calc(10px + 1.5vw); */
+}
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  height: 90%;
+  width: 70%;
+}
 
 #about-me-splash {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: black;
   height: 100vh;
 }
 
 #about-me-container {
-  border: 2px solid red;
+  /* border: 2px solid yellow; */
+  height: 100%;
+  overflow: auto;
   max-width: 915px;
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-style: italic;
 }
 
 #profile-picture {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+footer .w3-bar{
+  font-size: calc(6px + 0.5vw);
+  color: rgb(159, 162, 163);
+  background-color: rgb(55, 55, 55);
 }
