@@ -22,7 +22,7 @@
   /* border: 1px solid red; */
   transform: translateY(20px);
   font-family: custom;
-  font-size: 12vw;
+  font-size: 10vw;
   cursor: pointer;
   flex: 1;
 }
