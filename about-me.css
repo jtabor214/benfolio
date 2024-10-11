@@ -44,17 +44,17 @@
   flex-direction: column;
   background: none;
   /* color: black; */
-  /* font-family: 'Times New Roman', Times, serif; */
   /* font-size: calc(10px + 1.5vw); */
 }
 
 #contact-form{
+  border-radius: 2%;
   display: flex;
   flex-direction: column;
   align-items: normal;
   justify-content: center;
   height: 90%;
-  width: 70%;
+  width: 85%;
 }
 
 #about-me-splash {
