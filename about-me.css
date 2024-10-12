@@ -78,6 +78,8 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding-right: 20px;
+  max-height: 740px;
+  max-width: 360px;
 }
 
 footer .w3-bar{
