@@ -10,23 +10,23 @@
 </head>
 <body>
 
-  <header>
-    <div class="w3-bar">
-      <div class="w3-bar-item" id="rt-home-button">
-        <a href="index.html">benmakesmedia</a>
-      </div>
-    </div>
-  </header>
-
   <div class="om-splash-container">
-    
+
+    <div id="nav-bar" class="w3-bar w3-black w3-mobile w3-display-topleft">
+      <li><a href="index.html" class="w3-bar-item w3-button w3-hover-black";>benmakesmedia | Home</a></li>
+      <li><a href="online-media.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Online Media</a></li>
+      <li><a href="screenwriting.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Screenwriting</a></li>
+      <li><a href="#" onclick="document.getElementById('contact-modal').style.display='block'" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Contact</a></li>
+    </div>
+
     <div class="om-content-container">
-      
-      <img src="images/placeholder3.jpg" id="header-image" class="w3-image" alt="Thumbnail 3">
+
+      <h2>Online Media</h2>
+      <h3>See my work at:</h3>
 
       <div class="om-grid">
 
-        <div class="w3-row thumbnail-grid">
+        <div class="w3-container w3-row thumbnail-grid">
 
             <div id="thumbnail-card" class="w3-third w3-container w3-left w3-padding-16" data-info="info1">
               <div class="w3-card-4 w3-mobile">
@@ -148,14 +148,6 @@
     </div>
 
   </div>
-
-  <footer>
-    <div class="w3-bar">
-      <div class="w3-bar-item">
-        <p>&copy; benmakesmedia</p>
-      </div>
-    </div>
-  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {

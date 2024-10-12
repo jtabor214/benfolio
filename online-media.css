@@ -2,30 +2,56 @@ a {
   text-decoration: none;
 }
 
-.w3-bar {
-  height: 4vh;
-  display: flex;
-  align-items: center;
-  color: white;
-  background-color: rgb(33, 33, 33);
-  font-size: calc(12px + 0.6vw);
-  font-family: 'Courier New', Courier, monospace;
-}
 
 .om-splash-container{
   /* border: 2px solid red; */
+  background-color: black;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+#nav-bar {
+  /* border: 2px solid blue; */
+  height: 10%;
+  width: 52%;
+  transform-origin: left top; /* Set the point of rotation to the top-left */
+  transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
+}
+
+#nav-bar li {
+  /* border: 1px solid blue; */
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 900;
+}
+
 .om-content-container {
   /* border: 2px solid blue; */
-  background-color: black;
   width: 100%;
   max-width: 915px;
   height: 100vh;
   overflow: auto;
+}
+
+.om-content-container h2 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 3px 3px 0px rgb(231, 212, 7);
+}
+
+.om-content-container h3 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
 }
 
 #header-image {
@@ -68,10 +94,4 @@ a {
   border: 2px solid red;
   height: 100%;
   color: white;
-}
-
-footer .w3-bar{
-  font-size: calc(6px + 0.5vw);
-  color: rgb(159, 162, 163);
-  background-color: rgb(55, 55, 55);
 }

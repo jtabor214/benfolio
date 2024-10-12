@@ -10,23 +10,23 @@
 </head>
 <body>
 
-  <header>
-    <div class="w3-bar">
-      <div class="w3-bar-item" id="rt-home-button">
-        <a href="index.html">benmakesmedia</a>
-      </div>
-    </div>
-  </header>
-
   <div class="sw-splash-container">
 
-    <div class="sw-content-container">
+    <div id="nav-bar" class="w3-bar w3-black w3-mobile w3-display-topleft">
+      <li><a href="index.html" class="w3-bar-item w3-button w3-hover-black";>benmakesmedia | Home</a></li>
+      <li><a href="online-media.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Online Media</a></li>
+      <li><a href="screenwriting.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Screenwriting</a></li>
+      <li><a href="#" onclick="document.getElementById('contact-modal').style.display='block'" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Contact</a></li>
+    </div>
+
+    <div class="sw-content-container w3-display-middle">
       
       <h2>Screenwriting</h2>
+      <h3>For more script details, contact me!</h3>
 
       <div id="sw-grid" class="w3-container">
 
-        <button onclick="myFunction('Demo1', this)" class="w3-btn w3-block w3-black w3-left-align"><h4>Script #1 <i class="arrow right"></i></h4></button>
+        <!-- <button onclick="myFunction('Demo1', this)" class="w3-btn w3-block w3-black w3-left-align"><h4>Script #1 <i class="arrow right"></i></h4></button>
         <div id="Demo1" class="w3-container w3-hide w3-animate-right">
           <h5>Description of the script</h5>
           <p>logline</p>
@@ -36,6 +36,20 @@
         <div id="Demo2" class="w3-container w3-hide w3-animate-right">
           <h5>Description of the script</h5>
           <p>logline</p>
+        </div> -->
+
+        <div class="w3-block w3-padding-16 w3-black w3-left-align"><h4>Script #1</h4>
+          <div id="Demo1" class="w3-container">
+            <h5>Description of the script</h5>
+            <p>logline</p>
+          </div>
+        </div>
+        
+        <div class="w3-block w3-padding-16 w3-black w3-left-align"><h4>Script #2</h4>
+          <div id="Demo2" class="w3-container">
+            <h5>Description of the script</h5>
+            <p>logline</p>
+          </div>
         </div>
 
       </div>
@@ -43,15 +57,7 @@
 
   </div>
 
-  <footer>
-    <div class="w3-bar">
-      <div class="w3-bar-item">
-        <p>&copy; benmakesmedia</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
+  <!-- <script>
     function myFunction(id, element) {
       var x = document.getElementById(id);
       var arrow = element.querySelector(".arrow"); // Get the arrow element
@@ -66,7 +72,7 @@
         arrow.classList.add("right"); // Rotate arrow down
       }
     }
-  </script>
+  </script> -->
 
 </body>
 </html>

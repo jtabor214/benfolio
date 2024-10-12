@@ -2,14 +2,8 @@ a {
   text-decoration: none;
 }
 
-.w3-bar{
-  height: 4vh;
-  display: flex;
-  align-items: center;
-  color: white;
-  background-color: rgb(33, 33, 33);
-  font-size: calc(12px + 0.6vw);
-  font-family: 'Courier New', Courier, monospace;
+body{
+  background-color: black;
 }
 
 .sw-splash-container {
@@ -19,9 +13,29 @@ a {
   justify-content: center;
 }
 
+#nav-bar {
+  /* border: 2px solid blue; */
+  height: 10%;
+  width: 52%;
+  transform-origin: left top; /* Set the point of rotation to the top-left */
+  transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
+}
+
+#nav-bar li {
+  /* border: 1px solid blue; */
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: 900;
+}
+
 .sw-content-container {
   /* border: 2px solid blue; */
-  background-color: black;
+  margin-left: 30px;
   width: 100%;
   max-width: 915px;
   height: 100vh;
@@ -29,19 +43,27 @@ a {
 }
 
 .sw-content-container h2 {
-  padding-left: 10px;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: 800;
   letter-spacing: .2rem;
-  color: rgba(255, 255, 255, 0.763);
+  color: white;
   text-decoration: underline;
   text-underline-offset: 10px;
-  text-shadow: 3px 3px 0px rgb(231, 108, 7);
+  text-shadow: 3px 3px 0px rgba(231, 212, 7);
+}
+
+.sw-content-container h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
 }
 
 #sw-grid {
   /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
   font-size: calc(8px + 0.5vw);
   font-family: 'Courier New', Courier, monospace;
   color: white;
@@ -52,13 +74,20 @@ a {
   margin: 0;
 }
 
+.w3-block {
+  /* border: 2px solid blue; */
+  width: 80%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.664);
+}
+
+/*
 .arrow {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  transition: transform 0.3s ease; /* Smooth arrow rotation */
-}
+  transition: transform 0.3s ease; 
+} 
 
 .down {
   transform: rotate(45deg);
@@ -71,10 +100,5 @@ a {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-footer .w3-bar{
-  font-size: calc(6px + 0.5vw);
-  color: rgb(159, 162, 163);
-  background-color: rgb(55, 55, 55);
-}
+} 
+*/
