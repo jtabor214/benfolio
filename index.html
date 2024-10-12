@@ -11,25 +11,27 @@
 </head>
 <body>
 
-  <div id="banner">
-    <header id="home-header">
-        <h1>BEN WEBSTER</h1>
-    </header>
+  <div class="main-container w3-display-middle">
 
-    <div class="w3-row" id="personal-links">
+    <div id="banner">
+      <header id="home-header">
+          <h1>BEN WEBSTER</h1>
+      </header>
 
-      <div class="w3-container w3-col">
-        <a href="about-me.html" class="w3-button w3-hover-none" id="about-link">ABOUT ME</a>
+      <div class="w3-row" id="personal-links">
+
+        <div class="w3-container w3-col">
+          <a href="about-me.html" class="w3-button w3-hover-none" id="about-link">ABOUT ME</a>
+        </div>
+
+        <div class="w3-container w3-col">
+          <button onclick="document.getElementById('contact-modal').style.display='block'" class="w3-button w3-hover-none">CONTACT</button>
+        </div>
+
       </div>
-
-      <div class="w3-container w3-col">
-        <button onclick="document.getElementById('contact-modal').style.display='block'" class="w3-button w3-hover-none">CONTACT</button>
-      </div>
-
     </div>
-  </div>
 
-  <div class="splash-page">
+    <div class="splash-page">
 
     <div id="modal-placeholder"></div>
 
@@ -44,16 +46,16 @@
     </div>  -->
     
     
-    <div class="w3-row" id="nav-container">
-      <div class="w3-col w3-container" style="width:49%">
-        <a href="screenwriting.html" class="nav-link" id="screenwriting-link">Screenwriting</a>
-      </div>
-      <div class="w3-col" id="separator" style="width:.5%"></div>
-      <div class="w3-col w3-container" style="width:49%">
-        <a href="online-media.html" class="nav-link" id="online-media-link"><p>Online Media</p></a>
+      <div class="w3-row" id="nav-container">
+        <div class="w3-col w3-container" style="width:49%">
+          <a href="screenwriting.html" class="nav-link" id="screenwriting-link">Screenwriting</a>
+        </div>
+        <div class="w3-col" id="separator" style="width:.5%"></div>
+        <div class="w3-col w3-container" style="width:49%">
+          <a href="online-media.html" class="nav-link" id="online-media-link"><p>Online Media</p></a>
+        </div>
       </div>
     </div>
-
   </div>
 
   <script src="./index.js"></script>

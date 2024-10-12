@@ -6,13 +6,18 @@
 }
 
 body {
-  background-color: black;
   background-image: url('images/background_theme.jpeg');
+  background-color: black;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, .65); /* Black with 50% transparency */
-  background-blend-mode: overlay; /* Blend the background color with the image */
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, .80);; /* Black with 50% transparency */
+  background-blend-mode: darken; /* Blend the background color with the image */
+}
+
+.main-container{
+  width: 100%;
+  max-width: 915px;
+  height: 100vh;
 }
 
 #banner {
@@ -35,7 +40,7 @@ body {
   margin: 0;
   transform: translateY(20px);
   font-family: 'Courier New', Courier, monospace;
-  font-size: 10vw;
+  font-size: 7vw;
   font-style: italic;
   cursor: pointer;
   font-weight: 600;
@@ -52,7 +57,7 @@ body {
 
 #personal-links {
   /* border: 2px solid green; */
-  font-size: 4vw;
+  font-size: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -104,7 +109,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, .65); /* Black with 50% transparency */
+  background-color: rgba(0, 0, 0, .78); /* Black with 50% transparency */
   background-blend-mode: overlay; /* Blend the background color with the image */
 }
 
@@ -120,7 +125,7 @@ body {
   text-decoration: none;
   color: white;
   display: block;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: Courier;
   font-weight: 600;
   display: flex;
