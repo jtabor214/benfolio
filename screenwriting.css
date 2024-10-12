@@ -77,7 +77,14 @@ body{
 .w3-block {
   /* border: 2px solid blue; */
   width: 80%;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.664);
+  border-bottom: 3px dotted rgba(255, 255, 255, 0.664);
+}
+
+.w3-block h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 /*
