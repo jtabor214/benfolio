@@ -104,13 +104,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  background-color: black;
-  background-image: url('images/background_theme.jpeg');
+  background-color: rgb(10, 10, 10);
+  /* background-image: url('images/background_theme.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, .78); /* Black with 50% transparency */
-  background-blend-mode: overlay; /* Blend the background color with the image */
+  background-color: rgba(0, 0, 0, .78);
+  background-blend-mode: overlay; */
 }
 
 #nav-container {

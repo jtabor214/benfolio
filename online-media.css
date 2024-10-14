@@ -2,12 +2,15 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: black;
+}
 
 .om-splash-container{
   /* border: 2px solid red; */
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -33,7 +36,7 @@ a {
 }
 
 .om-content-container {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   width: 100%;
   max-width: 915px;
   height: 100vh;
@@ -61,37 +64,48 @@ a {
 }
 
 .om-grid{
-  /* border: 2px solid red; */
+  border: 2px solid red;
   overflow: auto;
   height: 100%;
+
 }
 
-#thumbnail-card {
-  /* border: 2px solid yellow; */
+.w3-card {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-card {
+  border: 2px solid yellow;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
-  /* margin-bottom: 40px; */
-  height: 280px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-#thumbnail-card:hover p {
+.thumbnail-card h5 {
+  font-size: calc(10px + 0.7vw);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.thumbnail-card:hover h5 {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
 
 .thumbnail-image{
-  height: 232px;
-  padding-bottom: 10px;
-}
-
-.w3-card-4 {
-  height: 25vh;
-  color: white;
-  font-size: calc(8px + 0.5vw);
+  border: 2px solid red;
+  max-height: 100%;
 }
 
 .info-content {
   border: 2px solid red;
   height: 100%;
   color: white;
+  width: 100%;
 }
