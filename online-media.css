@@ -18,7 +18,7 @@ body {
 #nav-bar {
   /* border: 2px solid blue; */
   height: 10%;
-  width: 52%;
+  width: 50%;
   transform-origin: left top; /* Set the point of rotation to the top-left */
   transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
 }

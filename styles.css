@@ -16,8 +16,8 @@ body {
 
 .main-container{
   /* border: 1px solid red; */
+  /* max-width: 970px; */
   width: 100%;
-  max-width: 970px;
   height: 100vh;
 }
 
