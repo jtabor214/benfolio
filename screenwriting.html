@@ -57,6 +57,18 @@
 
   </div>
 
+  <div id="modal-placeholder"></div>
+
+  <script>
+    // Load the contact modal into the page
+    fetch('contact-modal.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('modal-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading modal:', error));
+  </script>
+
   <!-- <script>
     function myFunction(id, element) {
       var x = document.getElementById(id);

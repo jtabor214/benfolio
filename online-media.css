@@ -122,3 +122,28 @@ body {
 .info-content p {
   font-family: 'Courier New', Courier, monospace;
 }
+
+#close-modal-button{
+  background-color: none;
+}
+
+#contact-modal-content{
+  /* border: 2px solid blue; */
+  height: 90%;
+  background-color: none;
+  display: flex; 
+  background: none;
+  /* color: black; */
+  /* font-size: calc(10px + 1.5vw); */
+}
+
+#contact-form{
+  /* border: 2px solid blue; */
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+  height: 90%;
+  width: 85%;
+}
