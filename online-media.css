@@ -64,7 +64,7 @@ body {
 }
 
 .om-grid{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   overflow: auto;
   height: 100%;
 
@@ -104,8 +104,21 @@ body {
 }
 
 .info-content {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   height: 100%;
   color: white;
   width: 100%;
+  overflow: auto;
+}
+
+.info-content h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-bottom: 10px;
+}
+
+.info-content p {
+  font-family: 'Courier New', Courier, monospace;
 }
