@@ -111,6 +111,12 @@ body {
   overflow: auto;
 }
 
+.info-content h1 {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
 .info-content h5 {
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
