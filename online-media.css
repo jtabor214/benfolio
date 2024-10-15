@@ -123,6 +123,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+#icon-container {
+  /* border: 2px solid blue; */
+}
+
 #close-modal-button{
   background-color: none;
 }
