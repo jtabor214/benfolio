@@ -16,7 +16,7 @@ body {
 }
 
 #nav-bar {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   height: 7%;
   width: 48%;
   transform-origin: left top; /* Set the point of rotation to the top-left */
