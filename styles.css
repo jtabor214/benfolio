@@ -170,7 +170,12 @@ body {
   }
   
   body {
-    background-color: rgba(0, 0, 0);
+    background-image: none;
+    background-color: black;
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0);; /* Black with 50% transparency */
+    background-blend-mode: normal; /* Blend the background color with the image */
   }
   
   .main-container{
