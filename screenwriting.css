@@ -170,7 +170,7 @@ body{
   
   .sw-content-container {
     /* border: 2px solid blue; */
-    margin-left: 30px;
+    margin-left: 0px;
     width: 100%;
     max-width: 915px;
     height: 100vh;

@@ -188,6 +188,7 @@ body {
   #mobile-home-button{
     display: block;
     margin: 10px;
+    margin-top: 40px;
   }
   
   .om-content-container {
