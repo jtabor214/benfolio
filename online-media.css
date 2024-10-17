@@ -195,8 +195,8 @@ body {
     /* border: 2px solid blue; */
     width: 100%;
     max-width: 915px;
-    height: 100vh;
-    /* overflow: auto; */
+    height: 95vh;
+    overflow: auto;
   }
   
   .om-content-container h2 {
