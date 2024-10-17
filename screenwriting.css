@@ -173,7 +173,7 @@ body{
     margin-left: 0px;
     width: 100%;
     max-width: 915px;
-    height: 95vh;
+    height: 90vh;
     color: white;
   }
   
@@ -191,6 +191,7 @@ body{
   .sw-content-container h3 {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
+    font-size: 1.2rem;
   }
   
   #sw-grid {
@@ -214,6 +215,10 @@ body{
     /* border: 2px solid blue; */
     width: 90%;
     border-bottom: 3px dotted rgba(255, 255, 255, 0.664);
+  }
+
+  #sw-grid p {
+    font-size: .9rem;
   }
   
   .w3-block h4 {
