@@ -209,8 +209,8 @@ body {
     font-size: 3rem;
     font-style: italic;
     cursor: pointer;
-    font-weight: 600;
-    text-shadow: 5px 6px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-shadow: none;
   
   }
   
