@@ -176,7 +176,7 @@ body {
   }
   
   body {
-    background-color: rgba(0, 0, 0, .80);; /* Black with 50% transparency */
+    background-color: rgba(0, 0, 0);
   }
   
   .main-container{
