@@ -158,7 +158,11 @@ body {
   width: 85%;
 }
 
-@media screen and (min-width: 480px){
+#mobile-home-button{
+  display: none;
+}
+
+@media screen and (max-width: 480px){
   a {
     text-decoration: none;
   }
@@ -178,22 +182,12 @@ body {
   
   #nav-bar {
     /* border: 5px solid blue; */
-    height: 7%;
-    width: 48%;
-    transform-origin: left top; /* Set the point of rotation to the top-left */
-    transform: rotate(-90deg) translateX(-100%); /* Rotate the nav-bar */
+    display: none;
   }
   
-  #nav-bar li {
-    /* border: 1px solid blue; */
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: calc(7px + 1.5vh);  
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: 900;
+  #mobile-home-button{
+    display: block;
+    margin: 10px;
   }
   
   .om-content-container {
