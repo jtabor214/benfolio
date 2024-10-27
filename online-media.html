@@ -309,7 +309,11 @@
     function showThumbnails() {
       document.querySelectorAll('.info-content').forEach(info => info.style.display = 'none');
       document.querySelectorAll('.thumbnail-grid').forEach(grid => grid.style.display = 'block');
-      document.getElementById('mobile-home-button').style.display = 'block';
+      if (window.innerWidth <= 480) {
+        document.getElementById('mobile-home-button').style.display = 'block';
+      } else {
+        document.getElementById('mobile-home-button').style.display = 'none';
+      }
     }
   </script>
 
