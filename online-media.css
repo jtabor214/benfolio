@@ -40,6 +40,7 @@ body {
   width: 100%;
   max-width: 915px;
   height: 100vh;
+  cursor: default;
   /* overflow: auto; */
 }
 
@@ -83,6 +84,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  cursor: pointer;
 }
 
 .thumbnail-card h5 {

@@ -39,6 +39,7 @@ body{
   max-width: 915px;
   height: 100vh;
   color: white;
+  cursor: default;
 }
 
 .sw-content-container h2 {
