@@ -27,7 +27,7 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: calc(7px + 1.5vh);  
+  font-size: 1.1rem;  
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: 900;
@@ -35,7 +35,6 @@ body{
 
 .sw-content-container {
   /* border: 2px solid blue; */
-  margin-left: 30px;
   width: 100%;
   max-width: 915px;
   height: 100vh;
@@ -64,7 +63,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: normal;
-  font-size: calc(8px + 0.5vw);
   font-family: 'Courier New', Courier, monospace;
   color: white;
   /* overflow: auto; */
